@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* Je mets en place les polices de tout le site */
+
+@font-face {
+    font-family: "Pacifico";
+    src: url(./fonts/Pacifico-Regular.woff2) format(woff2);
+}
+
+@font-face {
+    font-family: "Urbanist-bold";
+    src: url(./fonts/Urbanist-Bold.woff2) format(woff2);
+}
+
+@font-face {
+    font-family: "Urbanist-semi-bold";
+    src: url(./fonts/Urbanist-SemiBold.woff2) format(woff2);
+}
+
+@font-face {
+    font-family: "Urbanist-medium";
+    src: url(./fonts/Urbanist-Medium.woff2) format(woff2);
+}
+
+@font-face {
+    font-family: "Urbanist-regular";
+    src: url(./fonts/Urbanist-Regular.woff2) format(woff2);
+}
+
+@font-face {
+    font-family: "Urbanist-thin";
+    src: url(./fonts/Urbanist-Thin.woff2) format(woff2);
+}
+
+/* Je déclare mes variables  */
+
+:root {
+    --red: #C11430;
+    --blue: #2E3E84;
+    --burgundy: #782241;
+    --brown:#9D9183;
+    --white: #F5F5F5;
+    --black: #0E0E0E;
+}
+
+.red{
+    color:var(--red);
+}
+
+
+body{
+    font-family:"Urbanist-medium", sans-serif;
+    letter-spacing: 1px;
+    margin:0;
+}
+
+.pacifico{
+    font-family: "Pacifico", sans-serif;
+    font-weight:400;
+}
+
+
+@media(min-width:1000px){
+
+    body{
+        font-size:1.3rem;
+    }
+}

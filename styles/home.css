@@ -1,0 +1,96 @@
+
+
+header{
+    height:100vh;
+    background-image: url(./img/home.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.sloggan{
+    font-size:2.2rem;
+    max-width:100%;
+    padding:30px;
+    position:absolute;
+    bottom:20px;
+    left:0px;
+    color:var(--white);
+}
+
+.who{
+    font-family: "Urbanist-medium", sans-serif;
+}
+
+.intro{
+    background-color:var(--brown);
+    padding:30px;
+    color:white;
+}
+
+
+.presentation{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    padding-top:30px;
+}
+
+.presentation-text{
+    padding: 30px;
+}
+
+.felicity{
+    width:350px;
+    height:300px;
+    background-image: url(./img/felicity.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+
+
+}
+
+@media(min-width:700px){
+    .sloggan{
+        /* font-size:3rem; */
+        max-width: 600px;
+    }
+
+    .who-description{
+        max-width:1100px;
+    }
+
+    .presentation{
+        flex-direction: row;
+    }
+
+    .felicity{
+        width:40%;
+        height:500px;
+        margin-left:auto;
+    }
+}
+
+
+
+@media(min-width:900px){
+    .sloggan{
+        font-size:3rem;
+        max-width: 800px;
+        padding:30px 80px;
+    }
+
+    .intro{
+        padding:30px 80px;
+    }
+
+    .presentation-text{
+        padding: 30px 50px 30px 80px;
+    }
+
+    .products__title__container {
+        height:160px;
+    }
+}
