@@ -7,6 +7,10 @@ header{
     background-position: top;
 }
 
+section{
+    position: relative;
+}
+
 .sloggan{
     font-size:2.2rem;
     max-width:100%;
@@ -16,6 +20,8 @@ header{
     left:0px;
     color:var(--white);
 }
+
+/*Je stylise la section de présentation*/
 
 .who{
     font-family: "Urbanist-medium", sans-serif;
@@ -42,19 +48,187 @@ header{
 }
 
 .felicity{
-    width:350px;
+    width:300px;
     height:300px;
     background-image: url(./img/felicity.jpg);
     background-size: cover;
     background-position: center;
     flex-shrink: 0;
+}
+
+/*Je stylise la section des dégustations*/
+
+.tasting-text{
+    padding:30px;
+}
+
+.tasting-background{
+    background-image: url(./img/tasting.jpg);
+    background-size: cover;
+    background-position:center;
+    padding:50px 30px;
+    position:relative;
+}
+
+.tasting{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    margin-bottom:60px;
+}
+
+.tasting-link{
+    background-color: var(--burgundy);
+    width:200px;
+    height:200px;
+    border-radius:25px;
+    text-decoration:none;
+    color:var(--white);
+    font-family:"Urbanist-semi-bold", sans-serif;
+    font-size:1.3rem;
+    -webkit-box-shadow: 10px 10px 34px 13px rgba(0,0,0,0.7); 
+    box-shadow: 10px 10px 34px 13px rgba(0,0,0,0.7);
+    transition:transform 0.2s ease-in-out;
+}
+
+.tasting-link:hover{
+    transform: scale(1.15);
+}
+
+.btn-contact.white{
+    position:absolute;
+    right:30px;
+    bottom:30px;
+}
+
+/*Je stylise la section des services*/
+
+.title-section{
+    padding:0px 30px;
+}
 
 
+.services-flex{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:80px;
+    margin-top:60px;
+    padding:30px;
+}
+
+.one-service{
+    background-color:#706A64;
+    width: 300px;
+    height:300px;
+    position:relative;
+    padding:40px 20px 20px 20px;
+    color:var(--white);
+    -webkit-box-shadow: 7px 9px 11px 2px rgba(0,0,0,0.25); 
+    box-shadow: 7px 9px 11px 2px rgba(0, 0, 0, 0.25);
+}
+
+.service-img-container{
+    border-radius:50%;
+    position:absolute;
+    top:-40px;
+    left:50%;
+    transform: translate(-50%, 0);
+    background-color: var(--blue);
+    padding:15px;
+    border: solid 3px white;
+    width:80px;
+    height:80px;
+}
+
+.service-img{
+    width:80%;
+}
+
+.service-img.advice{
+    width:100%;
+}
+
+.service-img.juror{
+    width:70%;
+}
+
+.service-title{
+    text-align:center;
+}
+
+.btn-container{
+    text-align: right;
+    padding:30px;
+}
+
+/*je stylise la section des images*/
+
+.img{
+    background-size: cover;
+    background-position: center;
+    height:300px;
+    margin-bottom:10px;
+}
+
+
+.img1{
+    background-image: url(./img/img1.jpg);
+}
+
+.img2{
+    background-image: url(./img/img2.jpg);
+}
+
+.img3{
+    background-image: url(./img/img3.jpg);
+}
+
+.img4{
+    background-image: url(./img/img4.jpg);
+}
+
+.img5{
+    background-image: url(./img/img5.jpg);
+    margin-bottom:0;
+}
+
+@media(min-width:600px){
+
+    .tasting-background{
+        padding:100px 30px;
+    }
+
+    .tasting{
+        flex-direction: row;
+        gap:100px;
+        margin-bottom:20px;
+    }
+
+    .images-top{
+        display: flex;
+        gap:20px;
+        margin-bottom:20px;
+    }
+
+    .images-bottom{
+        display: flex;
+        gap:20px;
+        
+    }
+
+    .img{
+        flex-grow: 1;
+        margin-bottom:0;
+    }
 }
 
 @media(min-width:700px){
     .sloggan{
-        /* font-size:3rem; */
         max-width: 600px;
     }
 
@@ -79,7 +253,7 @@ header{
     .sloggan{
         font-size:3rem;
         max-width: 800px;
-        padding:30px 80px;
+        padding:30px 100px;
     }
 
     .intro{
@@ -92,5 +266,57 @@ header{
 
     .products__title__container {
         height:160px;
+    }
+
+    .tasting-text{
+        padding:30px 80px;
+    }
+
+    .tasting-link{
+        width:260px;
+        height:260px;
+        font-size:1.5rem;
+    }
+
+    .btn-contact.white{
+        right:80px;
+    }
+
+    .title-section{
+        padding:0px 80px;
+    }
+
+    .service-title{
+        font-size:1.5rem;
+    }
+
+    .service-descr{
+        font-size:1rem;
+    }
+
+    .services-flex{
+        padding:30px 80px;
+    }
+
+    .btn-container{
+        padding:30px 80px;
+    }
+
+    .img{
+        height:400px;
+    }
+    
+}
+
+@media(min-width:1230px){
+    .services-flex{
+        flex-wrap: nowrap;
+        gap:20px;
+    }
+}
+
+@media(min-width:1300px){
+    .services-flex{
+        gap:30px;
     }
 }

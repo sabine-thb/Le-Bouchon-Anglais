@@ -59,13 +59,46 @@ body{
     margin:0;
 }
 
+/*Je défini quelques classes basiques pour faciler le css*/
+
 .pacifico{
     font-family: "Pacifico", sans-serif;
     font-weight:400;
 }
 
+.right{
+    text-align:right;
+}
 
-@media(min-width:1000px){
+.center-flex{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.btn-contact{
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:25px;
+    font-size:1.1rem;
+    transition:0.2s padding ease-in-out;
+}
+.btn-contact.white{
+    background-color: var(--white);
+    color:var(--black)
+}
+
+.btn-contact.black{
+    background-color: var(--black);
+    color:var(--white);
+}
+
+.btn-contact:hover{
+    padding: 10px 30px;
+}
+
+@media(min-width:900px){
 
     body{
         font-size:1.3rem;
