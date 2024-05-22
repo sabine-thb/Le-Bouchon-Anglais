@@ -138,6 +138,7 @@
     box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.08);
     -webkit-box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.08);
     position:fixed;
+    top:0;
     z-index:10;
 
 }
@@ -150,6 +151,7 @@
     box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.08);
     -webkit-box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.08);
     position:fixed;
+    top:0;
     z-index:10;
 }
 

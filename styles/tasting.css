@@ -1,0 +1,308 @@
+.header-img{
+    height:500px;
+    background-image: url(./img/tastingHeader.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top:100px;
+}
+
+.intro{
+    padding:30px 30px 0px 30px;
+    max-width:1250px;
+}
+
+.pacifico.red{
+    margin-bottom:0;
+}
+
+.tasting-types .subtitle{
+    margin-top:10px;
+    margin-bottom:35px;
+}
+
+
+/*Je mets en place la section des types de dégustations*/
+
+
+.tasting-types{
+    padding:30px 30px 60px 30px;
+}
+
+.tasting-type-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:50px;
+}
+
+.tasting-type{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    -webkit-box-shadow: 7px 9px 11px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 7px 9px 11px 2px rgba(0, 0, 0, 0.25);
+    background-color: var(--brown);
+    position:relative;
+}
+
+.tasting-img{
+    width:100%;
+    background-size: cover;
+    background-position: center;
+    height:220px;
+    flex-shrink: 0;
+}
+
+.tasting-img.one{
+    background-image: url(./img/individuals.jpg);
+}
+
+.tasting-img.two{
+    background-image: url(./img/companies.jpg);
+}
+
+.tasting-descr{
+    padding:20px;
+    color:var(--white);
+}
+
+.tasting-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tasting-title h2{
+   font-size: 1.15rem;
+}
+
+.tasting-time{
+    display:flex;
+    align-items: center;
+    gap:10px;
+}
+
+.tasting-time p{
+    font-size:0.8rem;
+}
+
+.tasting-time-img{
+    width:20px;
+}
+
+.btn-contact-container{
+   text-align: right;
+   margin :30px 0px 10px 0px;
+}
+
+/*Je mets en place la section de ce que l'on apprend lors d'une dégustation*/
+
+.during-tasting-section h2{
+    margin-left:30px;
+}
+
+.one-skill{
+    flex-direction:column;
+    width:180px;
+    height:180px;
+    background-color: var(--burgundy);
+    padding:20px;
+    border-radius:40px;
+    color:white;
+    font-size:0.8rem;
+    text-align: center;
+    -webkit-box-shadow: 16px 16px 15px 0px rgba(0,0,0,0.3); 
+    box-shadow: 16px 16px 15px 0px rgba(0,0,0,0.3);
+
+}
+
+.learning-container{
+    padding:50px;
+    background-image: url(./img/during-tasting.jpg);
+    background-size: cover;
+    background-position: center;
+    /* filter: blur(2px); */
+}
+
+.skill-grp{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    margin-bottom:30px;
+}
+
+.skill-grp:last-of-type{
+    margin-bottom:0;
+}
+
+/*Je mets en place la section des thèmes abordables*/
+
+.themes{
+    position:relative;
+    padding-bottom:50px;
+    margin-bottom:50px;
+}
+
+.themes-text{
+    padding:30px;
+}
+
+.themes-img{
+    width:300px;
+    height:400px;
+    background-image: url(./img/themes.jpg);
+    background-size: cover;
+    background-position: center;
+    margin:auto;
+}
+
+.btn-themes{
+    position:absolute;
+    right:30px;
+    bottom:0;
+}
+
+/*Je mets en place la section des prix*/
+
+.prices{
+    background-image: url(./img/vines.jpg);
+    background-size: cover;
+    background-position: center;
+    padding:100px 50px;
+    margin-top:30px;
+}
+
+.prices-text{
+    background-color: var(--white);
+    padding:20px;
+    max-width:500px;
+    margin:auto;
+    margin-bottom:30px;
+    text-align: center;
+}
+
+.btn-container{
+    text-align: center;
+}
+
+
+
+@media(min-width:550px){
+    .tasting-descr{
+        padding:30px;
+    }
+}
+
+@media(min-width:600px){
+    .tasting-type{
+        width:510px;
+    }  
+}
+
+@media(min-width:700px){
+    .themes{
+        display: flex;
+        align-items: center;
+        width:100%;
+        margin-top:30px;
+    }
+
+    .themes-img{
+        order:-1;
+        width:40%;
+        flex-shrink: 0;
+        margin:0;
+    }
+
+    .themes-text{
+        padding:0px 30px;
+    }
+
+}
+
+@media(min-width:720px){
+    .skill-grp{
+        flex-direction:row;
+    }
+}
+
+@media(min-width:800px){
+    .themes{
+        padding-bottom:0px;
+    }
+}
+
+
+
+@media(min-width:900px){
+    .intro, .tasting-types{
+        padding:30px 80px 60px 80px;
+    }
+
+    .tasting-title h2{
+        font-size:2rem;
+    }
+
+    .tasting-time p{
+        font-size:1.3rem;
+    }
+    .tasting-time img{
+        width:35px;
+    }
+
+    .tasting-type{
+        flex-direction: row;
+        width:auto;
+        height:500px;
+    }
+
+    .tasting-type .btn-contact{
+        position:absolute;
+        right:30px;
+        bottom:30px;
+    }
+
+    .tasting-img{
+        height:100%;
+        width:40%;
+    }
+
+    .themes-text{
+        padding: 0px 80px 30px 50px;
+    }
+
+    .themes-img{
+        height:550px;
+    }
+
+    .prices{
+        padding:150px;
+    }
+}
+
+@media(min-width:1100px){
+    .learning-container{
+        display:flex;
+        justify-content: center;
+        gap:30px;
+        padding:180px 50px;
+    }
+
+    .skill-grp{
+        margin-bottom: 0;
+    }
+}
+
+
+@media(min-width:1200px){
+    .tasting-type{
+        width:1100px;
+    }
+
+    .one-skill{
+        width:200px;
+        height:200px;
+        font-size:1rem;
+    }
+}
