@@ -1,0 +1,178 @@
+header{
+    background-image: url(./img/about.jpg);
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    height:600px;
+}
+
+h1{
+    padding:30px 30px 20px 30px;
+    margin-bottom:0;
+}
+
+/*je mets en place la section de "mon histoire"*/
+
+.story{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.story-text{
+    padding: 0px 30px 30px 30px;
+}
+
+.story-img{
+    background-image: url(./img/myStory.jpg);
+    background-size: cover;
+    background-position: center;
+    width:300px;
+    height:400px;
+}
+
+/*Je mets en place la bannière défilante*/
+
+.banner {
+    width: 100%;
+    height: 100px; 
+    overflow: hidden;
+    position: relative;
+    margin:50px 0px;
+}
+
+.scrolling-image {
+    width: 200%; /* Double la largeur pour permettre le défilement continu */
+    height: 100%;
+    background: url('./img/WSET.png') repeat-x;
+    background-size: 250px 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+.scrolling-image::before {
+    content: "";
+    width: 200%;
+    height: 100%;
+    background: url('./img/WSET.png') repeat-x;
+    background-size: 250px 100px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+/*Je mets en place la section du WSET*/
+
+.wset{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}
+
+.wset-text{
+    padding-left: 30px;
+}
+
+.wset-text a{
+    color:var(--burgundy);
+    font-weight:600;
+}
+
+.wset-img{
+    background-image: url(./img/WSET.jpg);
+    background-size: cover;
+    background-position: center;
+    width:300px;
+    height:400px;
+    position:relative;
+}
+
+.wset-img img{
+    width:80px;
+    position:absolute;
+    right:10px;
+    bottom:10px;
+}
+
+
+@media(min-width: 700px){
+    .story, .wset{
+        flex-direction: row;
+    }
+
+    .story-img{
+        width:40%;
+        flex-shrink: 0;
+        order:-1;
+        height:550px;
+    }
+
+    .wset-img{
+        width:45%;
+        flex-shrink: 0;
+        height:550px;
+    }
+}
+
+@media(min-width: 900px){
+    h1{
+        padding:30px 80px;
+    }
+
+    .wset{
+        align-items: flex-end;
+    }
+
+    .story, .wset{
+        gap:50px;
+    }
+
+    .story-text{
+        padding-right: 80px;
+    }
+
+
+    .banner {
+        width: 100%;
+        height: 200px; 
+    }
+    
+    .scrolling-image {
+        width: 200%; 
+        height: 100%;
+        background-size: 440px 200px;
+    }
+
+    .wset-text{
+        padding-left: 80px;
+    }
+
+    .wset-img{
+        background-position: right;
+    }
+
+    .wset-img img{
+        width:130px;
+        right:20px;
+        bottom:20px;
+    }
+}
+
+@media(min-width:1200px){
+
+    .wset{
+        align-items: center;
+    }
+}

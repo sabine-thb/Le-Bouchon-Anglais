@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
 
 /* Je mets en place les polices de tout le site */
 
