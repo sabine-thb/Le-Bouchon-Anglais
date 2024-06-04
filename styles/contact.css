@@ -11,9 +11,11 @@ h1 {
     margin-left: 30px;
 }
 
-/* .formContainer{
-    width:100%;
-} */
+.message-form{
+    margin-left:30px;
+    font-weight:600;
+    color:var(--burgundy)
+}
 
 
 form {
@@ -133,6 +135,11 @@ input[type="submit"]:hover{
 
 
 @media(min-width:900px) {
+
+    .message-form{
+        margin-left:80px;
+    }
+
     h1 {
         margin-left: 80px;
     }

@@ -34,7 +34,7 @@
                 <li><a href="tasting.html" class="burgerLinks">Dégustations</a></li>
                 <li><a href="services.html" class="burgerLinks">Services</a></li>
                 <li><a href="about.html" class="burgerLinks">À propos</a></li>
-                <li><a href="contact.html" class="burgerLinks">Contact</a></li>
+                <li><a href="contact.php" class="burgerLinks">Contact</a></li>
             </ul>
         </nav>
 
@@ -46,12 +46,23 @@
             <a href="tasting.html" class="navLink ">Dégustations</a>
             <a href="services.html" class="navLink">Services</a>
             <a href="about.html" class="navLink">À propos</a>
-            <a href="contact.html" class="navLink">Contact</a>
+            <a href="contact.php" class="navLink">Contact</a>
         </div>
     </header>
     <h1 class="pacifico red">Contact</h1>
+    <?php 
+    if (isset($_GET["err"]) && $_GET["err"] === "mail"){  
+            echo "<p class=\"message-form\">L'adresse mail que vous avez saisie n'est pas valide.</p>";         
+    }
+
+     if (isset($_GET["message"] )){  
+            echo "<p class=\"message-form\">Votre mesage a bien été envoyé.</p>";
+    } 
+
+    ?>
+
     <section class="contact">
-        <form action="./traiteContact.php">
+        <form action="./traiteContact.php" method="POST">
             <p>
                 <label for="name">Nom :</label>
                 <input type="text" id="name" name="name" required>
@@ -67,6 +78,10 @@
             <p>
                 <label for="email">Email :</label>
                 <input type="email" id="email" name="email" required>
+            </p>
+            <p>
+                <label for="subject">Objet :</label>
+                <input type="text" id="subject" name="subject" required>
             </p>
             <p class="textarea">
                 <label for="message">Message :</label>
