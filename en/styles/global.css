@@ -1,0 +1,321 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+/* Je mets en place les polices de tout le site */
+
+@font-face {
+    font-family: "Pacifico";
+    src: url(./fonts/Pacifico-Regular.woff2) format(woff2);
+}
+
+@font-face {
+    font-family: "Urbanist-bold";
+    src: url(./fonts/Urbanist-Bold.woff2) format(woff2);
+}
+
+@font-face {
+    font-family: "Urbanist-semi-bold";
+    src: url(./fonts/Urbanist-SemiBold.woff2) format(woff2);
+}
+
+@font-face {
+    font-family: "Urbanist-medium";
+    src: url(./fonts/Urbanist-Medium.woff2) format(woff2);
+}
+
+@font-face {
+    font-family: "Urbanist-regular";
+    src: url(./fonts/Urbanist-Regular.woff2) format(woff2);
+}
+
+@font-face {
+    font-family: "Urbanist-thin";
+    src: url(./fonts/Urbanist-Thin.woff2) format(woff2);
+}
+
+/* Je déclare mes variables  */
+
+:root {
+    --red: #C11430;
+    --blue: #2E3E84;
+    --burgundy: #782241;
+    --brown:#9D9183;
+    --white: #F5F5F5;
+    --black: #0E0E0E;
+}
+
+.red{
+    color:var(--red);
+}
+
+
+body{
+    font-family:"Urbanist-medium", sans-serif;
+    letter-spacing: 1px;
+    margin:0;
+}
+
+/*Je défini quelques classes basiques pour faciler le css*/
+
+.pacifico{
+    font-family: "Pacifico", sans-serif;
+    font-weight:400;
+}
+
+.right{
+    text-align:right;
+}
+
+.center-flex{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.btn-contact{
+    text-decoration:none;
+    padding:8px 20px;
+    border-radius:25px;
+    font-size:0.8rem;
+    transition:0.2s padding ease-in-out;
+}
+
+.btn-contact.white{
+    background-color: var(--white);
+    color:var(--black)
+}
+
+.btn-contact.black{
+    background-color: var(--black);
+    color:var(--white);
+}
+
+.btn-contact:hover{
+    padding: 8px 30px;
+}
+
+.subtitle{
+    font-size:1rem;
+}
+
+  /* boutons langues francais anglais */
+
+.dropdown {
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    z-index: 1000;
+}
+
+
+
+.dropdown:hover .dropdown-content {
+    top: -35px;
+    bottom: auto;
+}
+.dropbtn {
+    /* background-color: rgb(116 116 116); */
+    background-color: #383533;
+    color: white;
+    padding: 10px 36px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+
+.lang-icon {
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 27px;
+}
+
+.fl-icon {
+    transform: translateY(50%);
+    width: 13px;
+    position: absolute;
+    right: 16px;
+    top: 30%;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    /* background-color: rgb(116 116 116); */
+    background-color: #383533;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    z-index: 1;
+    top: -35px;
+    left: -14px;
+    font-size:1rem;
+}
+
+/* affiche contenu du dropdown */
+.dropdown-content.show {
+    display: block;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 11px 13px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #4e4a48;
+    border-radius: 20px;
+
+}
+
+
+/*Je stylise le footer présent sur toutes les pages*/
+
+footer{
+    background-color: #E6D9CA;
+    color:var(--black);
+    padding: 20px 0;
+    display:flex;
+    flex-direction:column;
+    gap:50px;
+    padding:60px 0px;
+}
+
+
+.footer-logo img{
+    width:220px;
+}
+
+.footer-pages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:var(--black);
+    gap:10px;
+}
+
+.footer-pages a{
+    text-decoration:none;
+    color:var(--black);
+    transition: font-weight 0.2s ease-in-out;   
+}
+
+.footer-pages a:hover{
+    font-weight:700; 
+}
+
+.footer-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-contact img{
+    width:30px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.footer-contact img:hover{
+    transform: scale(1.1);
+}
+
+.footer-contact-title{
+    font-family: "Urbanist-bold", sans-serif;
+}
+
+.footer-links-container{
+    display:flex;
+    gap:20px;
+
+}
+
+@media(min-width:900px){
+
+    body{
+        font-size:1.3rem;
+    }
+
+    .btn-contact{
+        font-size:1.1rem;
+        padding: 10px 30px;
+    }
+
+    .btn-contact:hover{
+        padding: 10px 40px;
+    }
+
+    .subtitle{
+        font-size:1.4rem;
+    }
+    
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding:160px 100px;
+    }
+
+
+    footer a{
+        font-size:1rem;
+    }
+
+    footer p{
+        margin:0;
+        margin-bottom:20px;
+    }
+
+    .footer-pages, .footer-contact{
+        justify-content: center;
+    }
+
+    .footer-pages{
+        align-items: flex-start;
+        gap:30px;
+    }
+
+    
+
+    
+}
+
+
+@media(min-width:1100px){
+
+    .footer-logo img{
+        width:300px;
+    }
+
+    footer a{
+        font-size:1.1rem;
+    }
+
+    .footer-links-container{
+        gap:30px;
+    }
+
+    .footer-contact img{
+        width:40px;
+    }
+}
+

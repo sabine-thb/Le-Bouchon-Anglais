@@ -1,0 +1,178 @@
+header {
+    background-image: url(./img/contact.jpg);
+    background-position: bottom;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    margin-bottom: 40px;
+}
+
+h1 {
+    margin-left: 30px;
+}
+
+.message-form{
+    margin-left:30px;
+    font-weight:600;
+    color:var(--burgundy)
+}
+
+
+form {
+    background-color: var(--brown);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 30px;
+
+}
+
+
+form p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    max-width: 400px;
+}
+
+textarea {
+    height: 150px;
+    max-width: 400px;
+    width: 100%;
+}
+
+input {
+    max-width: 400px;
+    height: 40px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    font-family: "Urbanist-medium", sans-serif;
+    background-color: var(--black);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    width: fit-content;
+    padding: 8px 20px;
+    transition: padding 0.2s ease-in-out;
+}
+
+input[type="submit"]:hover{
+    padding: 8px 30px;
+}
+
+.infos-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.all-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+}
+
+.one-info {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.one-info:nth-of-type(3) p,
+.one-info:last-of-type p {
+    word-break: break-all;
+}
+
+.one-info img {
+    width: 30px;
+}
+
+/*Je stylise la bannière défilante*/
+
+.defilement-container {
+    height: 80px !important;
+}
+
+.defilement-span {
+    font-size: 2rem !important;
+    font-family: "Urbanist-medium", sans-serif !important;
+    text-transform: none !important;
+}
+
+.defilement::after {
+    font-size: 2rem !important;
+    font-family: "Urbanist-medium", sans-serif !important;
+    text-transform: none !important;
+}
+
+@media(min-width:700px) {
+    .contact {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .all-infos {
+        padding: 0px 30px 30px 30px;
+    }
+
+    form,
+    .infos-card {
+        flex: 1;
+    }
+    .defilement-container {
+        height: 120px !important;
+    }
+}
+
+
+@media(min-width:900px) {
+
+    .message-form{
+        margin-left:80px;
+    }
+
+    h1 {
+        margin-left: 80px;
+    }
+
+    input[type="submit"] {
+        padding: 10px 30px;
+        font-size: 1.1rem;
+    }
+
+    input[type="submit"]:hover{
+        padding: 10px 40px;
+    }
+
+    .all-infos {
+        padding: 0px 80px 30px 50px;
+    }
+
+
+}
+
+@media(min-width:1200px) {
+
+    form {
+        padding: 30px 80px;
+        align-items: flex-start;
+    }
+
+    textarea,
+    .textarea {
+        width: 100% !important;
+        max-width: 100%;
+        height: 250px;
+    }
+
+
+}

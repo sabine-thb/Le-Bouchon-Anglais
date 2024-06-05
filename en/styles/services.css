@@ -1,0 +1,461 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 100px);
+    margin-top: 100px;
+}
+
+.header div {
+    height: 50%;
+    width: 100%;
+}
+
+.header-img {
+    width: 50%;
+    background-image: url(./img/header-services.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+.header-link {
+    width: 100%;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--burgundy);
+    padding: 10px 30px;
+    border-radius: 30px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.header-link:hover {
+    transform: scale(1.1);
+}
+
+/*Je mets en place la section de juré*/
+
+.jure-part1 {
+    padding: 30px;
+}
+
+.jure-logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.jure-logos a {
+    transition: transform 0.2s ease-in-out;
+}
+
+.jure-logos a:hover {
+    transform: scale(1.1);
+}
+
+.jure-logos img {
+    width: 150px;
+}
+
+.jure-logos a:nth-of-type(4) img,
+.jure-logos a:nth-of-type(1) img {
+    width: 120px;
+}
+
+.jure-part2 {
+    background-color: var(--brown);
+    padding: 30px 30px 90px 30px;
+    color: var(--white);
+    position: relative;
+}
+
+.jure-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.img1 {
+    background-image: url(./img/felicity.jpg);
+}
+
+.img2 {
+    background-image: url(./img/juge8.jpg);
+}
+
+.img3 {
+    background-image: url(./img/bottles.jpg);
+}
+
+.jure-img div {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    border: 2px solid var(--black);
+}
+
+.jure-part2 .btn-contact {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+/*Je stylise la section des services*/
+
+.advices {
+    padding: 30px 0px;
+}
+
+.advices h2 {
+    margin: 30px;
+}
+
+.wine-sell {
+    background-image: url(./img/advices.jpg);
+    background-position: bottom;
+    background-size: cover;
+    color: white;
+    padding: 30px;
+}
+
+.wine-sell p {
+    max-width: 1000px;
+}
+
+.sell-advices,
+.advices-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.advice {
+    width: 180px;
+    height: 180px;
+    background-color: var(--burgundy);
+    border-radius: 40px;
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 20px;
+    -webkit-box-shadow: 16px 16px 15px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 16px 16px 15px 0px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Je mets en place ma section conseils et accompagnements*/
+
+.coaching>h2 {
+    padding-left: 30px;
+}
+
+.coaching-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px 80px 30px;
+    gap:30px;
+    position: relative;
+
+}
+
+.coaching-img {
+    width: 300px;
+    height: 400px;
+    background-image: url(./img/coaching.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.coaching-flex .btn-contact {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+
+/*Je mets en place la section de traduction*/
+
+.traduction{
+    padding-top:50px;
+}
+
+.traduction h2 {
+    margin-right: 30px;
+}
+
+.traduction-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 0 30px;
+    position:relative;
+}
+
+.traduction-img {
+    width: 300px;
+    height: 400px;
+    background-image: url(./img/translation.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.traduction .btn-contact {
+    position: absolute;
+    left: 30%;
+    bottom: 30px;
+    display: none;
+}
+
+
+
+
+
+@media(min-width:470px) {
+    .header-link {
+        width: 360px;
+    }
+
+    .jure-logos {
+        flex-direction: row;
+    }
+
+    .jure-logos img {
+        width: 80px;
+    }
+
+    .jure-logos a:nth-of-type(4) img,
+    .jure-logos a:nth-of-type(1) img {
+        width: 50px;
+    }
+}
+
+@media(min-width:600px) {
+    .advices-group {
+        flex-direction: row;
+    }
+
+    .sell-advices {
+        padding: 30px;
+    }
+}
+
+@media(min-width:700px) {
+    .jure-img {
+        flex-direction: row;
+    }
+
+    .jure-img div {
+        width: 200px;
+        height: 300px;
+    }
+
+    .jure-logos {
+        gap: 50px;
+    }
+
+    .jure-logos img {
+        width: 100px;
+    }
+
+    .jure-logos a:nth-of-type(4) img,
+    .jure-logos a:nth-of-type(1) img {
+        width: 80px;
+    }
+
+    .coaching-flex,
+    .traduction-flex {
+        flex-direction: row;
+        display: flex;
+        width: 100%;
+
+
+    }
+
+    .coaching-flex {
+        padding: 0px 30px 30px 0px
+    }
+
+    .traduction-flex {
+        padding: 0px 0px 0px 30px
+    }
+
+    .coaching-img,
+    .traduction-img {
+        width: 50%;
+        height: 500px;
+        flex-shrink: 0;
+        margin: 0;
+    }
+
+    .coaching-img {
+        order: -1;
+    }
+
+    .traduction .btn-contact {
+        display: block;
+    }
+
+}
+
+
+@media(min-width:800px) {
+    .header {
+        flex-direction: row;
+    }
+
+    .header div {
+        height: calc(100vh - 100px);
+    }
+
+    .header-link {
+        width: 450px;
+    }
+}
+
+@media(min-width:900px) {
+    .jure-part1 {
+        padding: 30px 80px;
+    }
+
+    .advices h2 {
+        margin-right: 80px;
+    }
+
+    .jure-part2 {
+        padding: 80px 80px 130px 80px;
+    }
+
+    .jure-img {
+        gap: 50px;
+        padding-top: 30px;
+    }
+
+    .jure-img div {
+        width: 300px;
+        height: 400px;
+    }
+
+    .wine-sell {
+        height: 600px;
+        padding: 50px 80px;
+    }
+
+    .sell-title {
+        margin: 30px 80px 30px 30px;
+    }
+
+    .sell-advices {
+        flex-direction: row;
+    }
+
+    .coaching-flex,
+    .traduction-flex {
+        gap: 50px;
+    }
+
+    .coaching-flex {
+        padding: 0px 80px 50px 0px;
+    }
+
+    .coaching-flex .btn-contact {
+        right: 80px;
+        bottom:0;
+    }
+
+    .traduction-flex .btn-contact {
+       display:none;
+    }
+
+    .traduction h2{
+        margin-right:80px;
+    }
+
+    .traduction-flex {
+        padding-left:80px;
+
+    }
+
+
+}
+
+@media(min-width:1000px) {
+
+
+
+    .jure-logos img {
+        width: 150px;
+    }
+
+    .jure-logos a:nth-of-type(4) img,
+    .jure-logos a:nth-of-type(1) img {
+        width: 120px;
+    }
+
+
+
+    .coaching-img {
+        width: 55%;
+    }
+
+    
+}
+
+@media(min-width:1020px){
+    .traduction-flex .btn-contact {
+        display:block;
+    }
+}
+
+@media(min-width:1200px) {
+    .jure-logos {
+        gap: 80px;
+    }
+
+    .advice {
+        font-size: 1rem;
+        width: 200px;
+        height: 200px;
+    }
+
+    .wine-sell {
+        background-position: center;
+    }
+
+    .sell-advices,
+    .advices-group {
+        gap: 80px;
+    }
+
+    .coaching-flex {
+        padding: 0px 80px 30px 0px;
+    }
+
+    .traduction-flex .btn-contact {
+        left:35%;
+    }
+}
