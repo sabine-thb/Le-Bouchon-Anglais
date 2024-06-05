@@ -159,6 +159,17 @@
             <a href="./contact.php" class="btn-contact black">Nous contacter</a>
         </div>
     </section>
+    <div class="dropdown">
+        <img class="lang-icon" src="./styles/img/globe.png" alt="traduction">
+        <button id="dropdownBtn" class="dropbtn"><span class="lang"></span>
+          <img class="fl-icon" src="./styles/img/arrow.png" alt="fleche">
+          Langage
+        </button>
+        <div id="dropdownContent" class="dropdown-content">
+          <a href="./services.html" class="fr">Français</a>
+          <a href="./en/services.html" class="en">Anglais</a>
+        </div>
+    </div>
     <footer>
         <a href="index.html" class="footer-logo center-flex">
             <img src="./styles/img/logo.png" alt="">
@@ -190,6 +201,13 @@
 
 
     <script src="./scripts/menu.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+   <script src="./scripts/animations/services.js"></script>
+   <script src="./scripts/animations/footer.js"></script>
 </body>
 
 </html>

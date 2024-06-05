@@ -9,6 +9,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 
 /* Je mets en place les polices de tout le site */
 
@@ -106,6 +110,82 @@ body{
 
 .subtitle{
     font-size:1rem;
+}
+
+  /* boutons langues francais anglais */
+
+.dropdown {
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    z-index: 1000;
+}
+
+
+
+.dropdown:hover .dropdown-content {
+    top: -35px;
+    bottom: auto;
+}
+.dropbtn {
+    /* background-color: rgb(116 116 116); */
+    background-color: #383533;
+    color: white;
+    padding: 10px 36px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+
+.lang-icon {
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 27px;
+}
+
+.fl-icon {
+    transform: translateY(50%);
+    width: 13px;
+    position: absolute;
+    right: 16px;
+    top: 30%;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    /* background-color: rgb(116 116 116); */
+    background-color: #383533;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    z-index: 1;
+    top: -35px;
+    left: -14px;
+    font-size:1rem;
+}
+
+/* affiche contenu du dropdown */
+.dropdown-content.show {
+    display: block;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 11px 13px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #4e4a48;
+    border-radius: 20px;
+
 }
 
 

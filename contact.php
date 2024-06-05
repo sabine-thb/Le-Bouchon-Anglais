@@ -127,6 +127,17 @@
             <span class="defilement-span">Contactez-nous • Contactez-nous • Contactez-nous • Contactez-nous • Contactez-nous • Contactez-nous • Contactez-nous •</span>
         </div>
     </div>
+    <div class="dropdown">
+        <img class="lang-icon" src="./styles/img/globe.png" alt="traduction">
+        <button id="dropdownBtn" class="dropbtn"><span class="lang"></span>
+          <img class="fl-icon" src="./styles/img/arrow.png" alt="fleche">
+          Langage
+        </button>
+        <div id="dropdownContent" class="dropdown-content">
+          <a href="./contact.php" class="fr">Français</a>
+          <a href="./en/contact.php" class="en">Anglais</a>
+        </div>
+    </div>
     <footer>
         <a href="index.html" class="footer-logo center-flex">
             <img src="./styles/img/logo.png" alt="">
@@ -155,11 +166,14 @@
         </div>
     </footer>
 
-
-
-
-
     <script src="./scripts/menu.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <script src="./scripts/animations/contact.js"></script>
+    <script src="./scripts/animations/footer.js"></script>
 </body>
 
 </html>
