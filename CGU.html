@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Bouchon Anglais - CGU</title>
+    
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/menu.css">
+    <link rel="stylesheet" href="./styles/defilement.css">
+    <link rel="stylesheet" href="./styles/legalNotices.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="nav1">
+            <a href="index.html" class="logoContainer">
+                <img src="./styles/img/logo.png" class="logo" alt="logo de l'exposition">
+            </a>
+        </div>
+        <div class="mobile-nav-button">
+            <div class="mobile-nav-button__line"></div>
+            <div class="mobile-nav-button__line"></div>
+            <div class="mobile-nav-button__line"></div>
+        </div>
+        <nav class="mobile-menu">
+            <ul>
+                <li><a href="index.html" class="burgerLinks">Accueil</a></li>
+                <li><a href="tasting.html" class="burgerLinks">Dégustations</a></li>
+                <li><a href="services.html" class="burgerLinks">Services</a></li>
+                <li><a href="about.html" class="burgerLinks">À propos</a></li>
+                <li><a href="contact.php" class="burgerLinks">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav2">
+            <a href="index.html" class="logoLink">
+                <img src="./styles/img/logo.png" class="logo" alt="logo de l'exposition">
+            </a>
+            <a href="index.html" class="navLink">Accueil</a>
+            <a href="tasting.html" class="navLink ">Dégustations</a>
+            <a href="services.html" class="navLink">Services</a>
+            <a href="about.html" class="navLink">À propos</a>
+            <a href="contact.php" class="navLink">Contact</a>
+        </div>
+    </header>
+    <section>
+        <h1 class="pacifico red">Conditions Générales d'utilisation</h1>
+        <div class="one-para">
+            <h2>Article 1 : Définitions</h2>
+            <p>
+                – « Prestataire » désigne la société Le Bouchon Anglais, une SASU spécialisée dans la vente de produits vinicoles et l'organisation de dégustations, au capital social de 5.000 euros, immatriculée au registre du commerce et des sociétés de Versailles sous le numéro d’identification 892 345 678, dont le siège social est situé 12 Rue de la République – 78000 Versailles, représentée par sa Présidente Madame Felicity Demont.
+                <br><br>
+                – « Utilisateur » désigne tout utilisateur naviguant ou ayant accès aux fonctionnalités du Site Internet.
+            </p>
+        </div>
+        <div class="one-para">
+            <h2>Article 2 - Accès et fonctionnalité du Site Internet</h2>
+            <p>
+                Le Site Internet est accessible gratuitement à tout utilisateur avec une connexion internet. Les dernières versions des navigateurs et des systèmes d’exploitation sont recommandées pour une meilleure expérience utilisateur.
+            </p>
+        </div>
+        <div class="one-para">
+            <h2>Article 3 - Déclarations, garanties et responsabilités</h2>
+            <p>
+                L’Utilisateur déclare et garantit qu’il ne va pas utiliser le Site Internet à des fins autres que celles envisagées par les présentes.
+                <br><br>
+                L’Utilisateur garantit le Prestataire contre toutes plaintes, réclamations, actions, condamnations et/ou revendications quelconques que le Prestataire pourrait subir du fait de la violation, par l’Utilisateur de l’une quelconque de ses obligations ou garanties aux termes des présentes conditions générales.
+            </p>
+        </div>
+        <div class="one-para">
+            <h2>Article 4 - Propriété</h2>
+            <p>
+                Le Prestataire est le seul propriétaire du Site Internet, y compris ses images, textes et leurs améliorations / modifications, y compris tous les droits de propriété intellectuelle prévus par les lois et les règlements.
+            </p>
+        </div>
+        <div class="one-para">
+            <h2>Article 5 - Liens hypertextes, publicité et avis clients</h2>
+            <p>
+                Le Site Internet peut proposer des liens hypertextes vers des sites internet de tiers. Le Prestataire décline toute responsabilité quant à leurs offres, actes, contenu, produits, services ou tout autre élément disponible.
+            </p>
+        </div>
+        <div class="one-para">
+            <h2>Article 6 - Signalement, réclamation ou demande</h2>
+            <p>
+                Tout signalement, réclamation ou demande concernant le contenu des présentes se fait par écrit par e-mail à l’adresse felicity.demont@lebouchonanglais.com, ou par courrier à l’adresse : Le Bouchon Anglais, 12 Rue de la République, 78000 Versailles.
+            </p>
+        </div>
+        <div class="one-para">
+            <h2>Article 7 - Divers</h2>
+            <p>
+                Les clauses du présent Accord sont divisibles. Si l’une des clauses est invalide ou inapplicable, les autres clauses restent en vigueur.
+                <br><br>
+                Les présentes sont écrites en français et régies par la loi française. En cas de litige, les Tribunaux de Paris auront compétence exclusive.
+            </p>
+        </div>
+    </section>
+    <div class="dropdown">
+        <img class="lang-icon" src="./styles/img/globe.png" alt="traduction">
+        <button id="dropdownBtn" class="dropbtn"><span class="lang"></span>
+          <img class="fl-icon" src="./styles/img/arrow.png" alt="fleche">
+          Langue
+        </button>
+        <div id="dropdownContent" class="dropdown-content">
+          <a href="./legalNotices.html" class="fr">Français</a>
+          <a href="./en/legalNotices.html" class="en">Anglais</a>
+        </div>
+    </div>
+    <footer>
+        <a href="index.html" class="footer-logo center-flex">
+            <img src="./styles/img/logo.png" alt="">
+        </a>
+        <div class="footer-pages">
+            <a href="legalNotices.html">Mentions légales</a>
+            <a href="CGU.html">CGU</a>
+            <a href="privacyPolicy.html">Politique de confidentialité</a>
+        </div>
+        <div class="footer-contact">
+            <p class="footer-contact-title">Contact</p>
+            <div class="footer-links-container">
+                <a href="https://www.facebook.com/bouchonanglais/">
+                    <img src="./styles/img/facebook.svg" class="facebook" alt="Lien vers le facebook">
+                </a>
+                <a href="https://www.linkedin.com/company/le-bouchon-anglais/">
+                    <img src="./styles/img/linkedin.svg" class="linkedin" alt="Lien vers le linkedIn">
+                </a>
+                <a href="mailto:felicity@lebouchonanglais.com">
+                    <img src="./styles/img/gmail.svg" class="gmail" alt="Lien pour envoyer un mail">
+                </a>
+                <a href="tel:+336 18 38 38 74">
+                    <img src="./styles/img/tel.svg" class="tel" alt="Lien pour téléphoner">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./scripts/menu.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <script src="./scripts/animations/legalNotices.js"></script>
+    <script src="./scripts/animations/footer.js"></script>
+</body>
+</html>

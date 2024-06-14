@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -143,7 +143,7 @@
             <img src="./styles/img/logo.png" alt="">
         </a>
         <div class="footer-pages">
-            <a href="legalNotice.html">Mentions légales</a>
+            <a href="legalNotices.html">Mentions légales</a>
             <a href="CGU.html">CGU</a>
             <a href="privacyPolicy.html">Politique de confidentialité</a>
         </div>
