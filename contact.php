@@ -57,7 +57,7 @@
     }
 
      if (isset($_GET["message"] )){  
-            echo "<p class=\"message-form\">Votre mesage a bien été envoyé.</p>";
+            echo "<p class=\"message-form\">Votre message a bien été envoyé.</p>";
     } 
 
     ?>

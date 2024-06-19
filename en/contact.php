@@ -53,11 +53,11 @@
     <h1 class="pacifico red">Contact</h1>
     <?php 
     if (isset($_GET["err"]) && $_GET["err"] === "mail"){  
-            echo "<p class=\"message-form\">L'adresse mail que vous avez saisie n'est pas valide.</p>";         
+            echo "<p class=\"message-form\">he email address you entered is not valid.</p>";         
     }
 
      if (isset($_GET["message"] )){  
-            echo "<p class=\"message-form\">Votre mesage a bien été envoyé.</p>";
+            echo "<p class=\"message-form\">Your message has been successfully sent.</p>";
     } 
 
     ?>
@@ -65,15 +65,15 @@
     <section class="contact">
         <form action="./traiteContact.php" method="POST">
             <p>
-                <label for="name">Nom :</label>
+                <label for="name">Last Name :</label>
                 <input type="text" id="name" name="name" required>
             </p>
             <p>
-                <label for="firstname">Prénom :</label>
+                <label for="firstname">First Name :</label>
                 <input type="text" id="firstname" name="firstname" required>
             </p>
             <p>
-                <label for="phone">Téléphone :</label>
+                <label for="phone">Phone :</label>
                 <input type="tel" id="phone" name="phone" required>
             </p>
             <p>
@@ -81,7 +81,7 @@
                 <input type="email" id="email" name="email" required>
             </p>
             <p>
-                <label for="subject">Objet :</label>
+                <label for="subject">Subject :</label>
                 <input type="text" id="subject" name="subject" required>
             </p>
             <p class="textarea">
@@ -89,7 +89,7 @@
                 <textarea id="message" name="message" required></textarea>
             </p>
             <p>
-                <input type="submit" value="Envoyer">
+                <input type="submit" value="Send">
             </p>
         </form>
         <div class="infos-card">
@@ -144,9 +144,9 @@
             <img src="./styles/img/logo.png" alt="">
         </a>
         <div class="footer-pages">
-            <a href="legalNotices.html">Mentions légales</a>
-            <a href="CGU.html">CGU</a>
-            <a href="privacyPolicy.html">Politique de confidentialité</a>
+            <a href="legalNotices.html">Legal notices</a>
+            <a href="CGU.html">Terms of use</a>
+            <a href="privacyPolicy.html">Privacy Policy</a>
         </div>
         <div class="footer-contact">
             <p class="footer-contact-title">Contact</p>
